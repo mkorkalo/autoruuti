@@ -80,7 +80,8 @@ See [Arduino UNO pinout diagram](https://images.prismic.io/circuito/8e3a980f0f96
 > in displaying an incorrect measuring value!
 > (Example: Slowly draining fluids from a container on the balance.)
 
-Technically, using the scale for powder measurement is Improver use as per the definition in manual, however I have found out that the resolutions is more than enough if you don't keep adding/removing powder for a long and reset between measurements.
+Technically, using the scale for powder measurement is Improver use as per the definition in manual, however I have found out that the accuracy is more than enough if you don't keep adding/removing powder for a long time and zero between measurements.
+You can achieve maybe about +/- 2 mg of accuracy with correct use and settings.
 
 # License
 
