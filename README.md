@@ -1,5 +1,5 @@
 # autoruuti
-Automatic power dispenser for ammunition reloading use.
+Automatic gunpowder dispenser for ammunition reloading use.
 
 Don't want to spend 1500 USD for a precision automatic powder dispenser? Build your own.
 Cost for the electronics is less than 50 €, plus a laboratory scale worth about 290 €.
