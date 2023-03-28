@@ -17,6 +17,7 @@ These are what I used. I am not affiliated with any of these manufacturers or sh
 * [Frankford Arsenal powder dispenser](https://www.metsovaruste.fi/metsastysmaailma/ruutisirotin-frankford-arsenal/p/60-025-3985/). You can use any other powder dispenser, but the included 3D model for the mechanical adapter & holder will probably not fit and adjustments will be needed.
 * A 5 volt power supply directly connected to the 5V rail of the Uno board. Do not use the included 12V to 5V DC converter, it will not supply enough power for the stepper motor and you will have problems.
 * A male to male RS-232 serial cable. I made my own cable from DB9 male connectors. Only TXD, RXD & GND are required (and rx/tx needs to be cross connected of course).
+* A 3D printer capable of printing at least PLA. I used PETG but PLA and others should work just fine. Almost any printer will do.
 
 ## Electronic assembly
 
@@ -69,6 +70,17 @@ See [Arduino UNO pinout diagram](https://images.prismic.io/circuito/8e3a980f0f96
 * Settings are saved automatically within 5 seconds of modification. Changing the settings often will not burn out your EEPROM.
 * Rightmost button is reset and will perform a hardware reset (EEPROM settings will not be lost)
 * Adjust speeds to match your powder and stepper/board combination.
+
+### Notes on accuracy of the KERN EMB-V 200
+
+* Always ZERO your scale between cases! As the [KERN EMB-V manual](https://dok.kern-sohn.com/manuals/files/English/EMB-V-BA-e-1624.pdf) mentions, it is not accurate for dynamic add-on weighing procedures:
+> Do not use balance for dynamic add-on weighing procedures, if
+> small amounts of goods to be weighed are removed or added.
+> The “stability compensation“ installed in the balance may result
+> in displaying an incorrect measuring value!
+> (Example: Slowly draining fluids from a container on the balance.)
+
+Technically, using the scale for powder measurement is Improver use as per the definition in manual, however I have found out that the resolutions is more than enough if you don't keep adding/removing powder for a long and reset between measurements.
 
 # License
 
